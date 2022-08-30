@@ -5,11 +5,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule (.*) $1.php [L]
 
-RewriteRule ^readAll$ readAll.php [NC,L]
-RewriteRule ^request_pickup$ request_pickup.php [NC,L]
-RewriteRule ^readAll/([0-9_-]*)$ readAll.php?page=$1 [NC,L]
-RewriteRule ^near_me/([0-9_-]*)$ near_me.php?page=$1 [NC,L]
-
 
 php_value upload_max_filesize 256M
 php_value post_max_size 256M
